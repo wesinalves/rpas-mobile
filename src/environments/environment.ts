@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'http://revista.iec.gov.br/submit/index.php/rpas/api/v1',
+  apiToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IlwiODBkMjM0MWY4NmE0OGVlMTY1NTk4MjMyZDAwMDI1OTRmMWNiZWRjZlwiIg.shvdbzQRR25UUEUvfqo0t1qJi6oG2qsH_ANPwdUVmuY'
 };
 
 /*
