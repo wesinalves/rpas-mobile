@@ -1,6 +1,8 @@
 {
   "name": "rpas",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "886cc2de"
 }

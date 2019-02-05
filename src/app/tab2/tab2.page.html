@@ -1,16 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      RPAS
-    </ion-title>
+  <ion-img src="/assets/banner.jpg"></ion-img>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-	<ion-card *ngFor="let issue of data?.issues" (click)="getIssue(issue)">
+	<ion-card *ngFor="let issue of data?.items" (click)="getIssue(issue)">
 		<ion-card-header>
-		    <ion-card-subtitle>Jan-mar</ion-card-subtitle>
-		    <ion-card-title>V.7 n.1(2016)</ion-card-title>
+		    <ion-img src="{{ issue.coverImageUrl['pt_BR'] }}"></ion-img>
+		    <ion-card-title>{{issue.identification}}</ion-card-title>
 		  </ion-card-header>
 	</ion-card>
 </ion-content>

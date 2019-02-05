@@ -1,9 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
+   <ion-img src="/assets/banner.jpg"></ion-img>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+
+	<ion-content>
+		<ion-card *ngFor="let submission of data?.items" (click)="getSubmission(submission)">
+			<ion-card-header>
+				<ion-card-subtitle>{{submission.title['pt_BR']}}</ion-card-subtitle>
+			    <ion-card-title>ID: {{submission.id}}</ion-card-title>
+			  </ion-card-header>
+		</ion-card>
+	</ion-content>
+
+</ion-content>

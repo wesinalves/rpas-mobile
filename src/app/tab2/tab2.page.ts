@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IssuesService } from '../issues.service';
 import { Router } from '@angular/router';
 
