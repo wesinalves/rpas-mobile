@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-item>
+  <ion-label position="floating">Nome</ion-label>
+  <ion-input [(ngModel)]="name"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Chave da API</ion-label>
+  <ion-input [(ngModel)]="token"></ion-input>
+</ion-item>
+<ion-button color="primary" expand="full">Salvar</ion-button>
+
+<ion-text>
+	<p>Para acessar a sua Chave da API, faça o seguinte passos:</p>
+	<p>
+		1. Vá até seu <a href="http://revista.iec.gov.br/submit/index.php/rpas/user/profile">perfil</a> no sistema online da Revista RPAS.<br>
+		2. Ir até a aba Chave da API e certifique-se que a opção "Permitir que aplicações externas com a chave da API tenham acesso a esta conta" está marcada.<br>
+		3. Copie o campo Chave da API
+		4. Volte ao aplicativo e cole sua chave no campo designado para a Chave da API.
+	</p>
+	<p>
+		Caso não consiga acessar sua chave, por favor entre em contato com nosso suporte técnico.
+	</p>
+</ion-text>
+
+</ion-content>
