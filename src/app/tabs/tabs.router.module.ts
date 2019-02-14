@@ -35,6 +35,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'resp-issue',
+        children: [
+          {
+            path: '',
+            loadChildren: '../resp-issue/resp-issue.module#RespIssuePageModule'
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
@@ -43,7 +52,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/tab2',
     pathMatch: 'full'
   }
 ];

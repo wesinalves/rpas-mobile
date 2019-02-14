@@ -7,7 +7,7 @@
 <ion-content>
 
 	<ion-content>
-		<ion-card *ngFor="let submission of data?.items" (click)="getSubmission(submission)">
+		<ion-card *ngFor="let submission of data?.items" >
 			<ion-card-header>
 				<ion-card-subtitle>{{submission.title['pt_BR']}}</ion-card-subtitle>
 			    <ion-card-title>ID: {{submission.id}}</ion-card-title>

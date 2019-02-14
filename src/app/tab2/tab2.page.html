@@ -5,10 +5,10 @@
 </ion-header>
 
 <ion-content>
-	<ion-card *ngFor="let issue of data?.items" (click)="getIssue(issue)">
+	<ion-card *ngIf="data" (click)="getIssue(data.id)">
 		<ion-card-header>
-		    <ion-img src="{{ issue.coverImageUrl['pt_BR'] }}"></ion-img>
-		    <ion-card-title>{{issue.identification}}</ion-card-title>
+		    <ion-img src="{{ data.coverImageUrl['pt_BR'] }}"></ion-img>
+		    <ion-card-title>{{data.identification}}</ion-card-title>
 		  </ion-card-header>
 	</ion-card>
 </ion-content>

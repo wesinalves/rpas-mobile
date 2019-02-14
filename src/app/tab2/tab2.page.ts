@@ -13,7 +13,7 @@ export class Tab2Page implements OnInit{
   constructor(private issuesService: IssuesService, private router: Router) { }
 
   ngOnInit() {
-  	this.issuesService.getData('issues')
+  	this.issuesService.getData('issues/current')
 		.subscribe(data => {
 			console.log(data);
       this.data = data
